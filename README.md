@@ -13,14 +13,14 @@ You can then use the various logging functions provided by `OSLogHelper` to log 
 
 ```
 let log = OSLog(subsystem: "com.example.myapp", category: "MyCategory")
-OSLogHelper.info("This is an informational message", log: log)
+OSLog.info("This is an informational message", log: log)
 ```
 
 You can also log error with error object
 
 ```
 let log = OSLog(subsystem: "com.example.myapp", category: "MyCategory")
-OSLogHelper.exception("This is an error message", error: myError, log: log)
+OSLog.exception("This is an error message", error: myError, log: log)
 ```
 
 You can use the following functions for logging messages with different levels:
